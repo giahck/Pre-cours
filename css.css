@@ -1,0 +1,6 @@
+h4{border: solid 15px black; clear: both; position: relative;
+bottom: 60%;}
+h1:first{ color:#FF0000; }
+h2,h3{border-style: solid;margin:0px;float: left;}
+h3{padding: 10px;
+    font-weight:100;}

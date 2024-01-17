@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spiaggia del Pevero</title>
+    <style>
+        /*<!--flex-direction: column=uno dietro laltro
+            column-reverse=al contrario in colonna
+            row=in riga
+            row-revers=riga al contrario
+        -->*/
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            background-color: blue;
+        }
+
+        .flex-container>div {
+            background-color: brown;
+            width: 10px;
+            text-align: center;
+            line-height: 10px;
+            margin: 20px;
+            padding: 20px;
+            font-size: 20px;
+        }
+
+        /*flex-wrap= wrap mette in coda nella larghezza uguale alla pagina
+        wrap-reverse mette in coda al contarrio 
+        nowrap*/
+        .flex-container2 {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap-reverse;
+            background-color: blue;
+
+        }
+
+        .flex-container2>div {
+            background-color: brown;
+            width: 10px;
+            text-align: center;
+            line-height: 10px;
+            margin: 20px;
+            padding: 20px;
+            font-size: 20px;
+        }
+        /*<!--justify-content: Property alline i box
+        justify-content: flex-start= E DI DEFOAULT
+        justify-content: flex-end= allinea gli elementi flessibili all'estremità del contenitore:
+        justify-content: center=la mette al centro 
+        justify-content: space-between=visualizza gli elementi flessibili con spazio tra le righe:
+        justify-content: space-around=visualizza gli elementi flessibili con spazio prima, tra e dopo le righe:
+        justify-content: space-evenly=
+        -->*/
+        .flex-container3 {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-evenly;
+            background-color: brown;
+
+        }
+
+        .flex-container3>div {
+            background-color: blueviolet;
+            width: 10px;
+            text-align: center;
+            line-height: 10px;
+            margin: 20px;
+            padding: 20px;
+            font-size: 20px;
+        }
+        /*<!--align-items Property sposta il box
+        align-items property: flex-start= E DI DEFOAULT
+        align-items property: flex-end= allinea gli elementi flessibili all'estremità del contenitore:
+        align-items property: center=allinea gli elementi flessibili al centro del contenitore:
+        align-items property: stretch=riempie
+        align-items property:  baseline= li mette in riga nel caso i box sono diversi di grandezza
+        -->*/
+        .flex-container4 {
+            margin-top: 20px;
+            height: 100%;
+            display: flex;
+            align-items: stretch;
+            
+            background-color: brown;
+            flex-wrap: wrap;
+
+        }
+
+        .flex-container4>div {
+            background-color: blueviolet;
+            width: 10px;
+            text-align: center;
+            line-height: 100px;
+            margin: 20px;
+            padding: 20px;
+            font-size: 20px;
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>Create a Flex Container</h1>
+    <!--flex-direction-->
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <!--flex-wrap Property-->
+    <!--flex-flow Property--- flex-flow: row wrap; uguale a row wrap-->
+    <div class="flex-container2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+    <!--justify-content Property-->
+    <div class="flex-container3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+     <!--align-items Property-->
+<div class="flex-container4">
+    <div><h1>1</h1></div>
+    <div><h6>4</h6></div>
+    <div><h3>3</h3></div>
+    <div><small>5</small></div>
+    <div><h2>2</h2></div>
+    <div><h1>1</h1></div>
+    <div><h6>4</h6></div>
+    <div><h3>3</h3></div>
+    <div><small>5</small></div>
+    <div><h2>2</h2></div>
+</div>
+
+</body>
+
+</html>

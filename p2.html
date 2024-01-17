@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0px;
+    }
+
+    .Container-head {
+        position: relative;
+        background-color: aqua;
+        height: 120px;
+    }
+
+    .nav {
+        bottom: 0;
+        background-color: green;
+        position: absolute;
+        width: 100%;
+
+
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        background-color: red;
+    }
+
+    .flex-container>div {
+        background-color: brown;
+        line-height: 40px;
+
+    }
+
+    .flex-container>div a {
+        text-decoration: none;
+        color: aliceblue;
+        font-size: 20px;
+    }
+    
+    .container-orizontal>ul{
+        margin: 0px;
+        padding: 0%;
+        width: 120px;
+        background-color: red;
+        position: fixed;
+        height: 100%;
+    }
+    .container-orizontal>ul li{
+        text-align: center;
+    }
+    .container-orizontal>ul a{
+        background-color: brown;
+        text-decoration: none;
+        
+    }
+    p{
+        font-weight: bold;
+        text-transform: capitalize;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+   
+</style>
+
+<body>
+    <div class="main">
+
+        <div class="Container-head">
+            <div class="nav">
+                <div class="flex-container">
+                    <div><a href="#">Home</a></div>
+                    <div><a href="#">Chi siamo</a></div>
+                    <div><a href="#">Servizio</a></div>
+                    <div><a href="#">Contatti</a></div>
+                    <div><a href="#">Shop</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="container-orizontal">
+            <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+              </ul>
+              
+        </div>
+        <div style="margin-left:10%;padding:1px 16px;">
+        <p>sdfsdfsdf</p>
+        <p>sdfsdfsdf</p>
+        <p>sdfsdfsdf</p>
+        <p>sdfsdfsdf</p>
+        <p>sdfsdfsdf</p>
+        </div>
+    </div>
+    
+</body>
+
+</html>
